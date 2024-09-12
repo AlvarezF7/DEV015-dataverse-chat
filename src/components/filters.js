@@ -1,5 +1,5 @@
 //crear aca los filtros y boton de limpiar 
-export function filterSection (props) {
+/*export function filterSection (props) {
   const formsAndFilter = document.createElement('div');
   formsAndFilter.innerHTML = `
      <div class="filtros" name="filtros"> 
@@ -7,8 +7,8 @@ export function filterSection (props) {
       <label for="select-order" >Buscar:</label>
       <select name="name" data-testid="select-sort" id="select-order">
         <option value="selecionar"> selección</option>
-        <option value="asc"${props.sortOrder === 'asc' ? 'selected': ''}> A-Z</option>
-        <option value="desc"${props.sortOrder === 'desc' ? 'selected': ''}> Z-A</option>
+        <option value="asc" > A-Z</option>
+        <option value="desc"> Z-A</option>
       </select> 
         
       <label for="year"> </label>
@@ -37,6 +37,6 @@ export function filterSection (props) {
       <button type="reset" data-testid="button-clear" id="btn">Limpiar</button>
     </form> 
      `;
-  /*console.log(formsAndFilter)*/
+  /*console.log(formsAndFilter)*
   return formsAndFilter
-}
+}*/

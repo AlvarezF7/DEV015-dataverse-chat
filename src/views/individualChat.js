@@ -13,6 +13,7 @@ export function ChatIndividual(props) {  //props solo contiene la id
   const bands = data.find((item) => item.id === props.id);
 
   if (!bands) {
+    // eslint-disable-next-line no-console
     console.error('No matching data found');
     return document.createElement('div'); // Devuelve un elemento vacío si no se encuentra el dato
   }

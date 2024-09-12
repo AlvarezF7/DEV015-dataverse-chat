@@ -3,10 +3,10 @@
 
 // src/views/Home.js
 import  data  from '../data/dataset.js';
-import { filterData } from '../lib/dataFunctions.js';
+//import { filterData } from '../lib/dataFunctions.js';
 import {renderItems} from '../components/cards.js';
 import { navigateTo } from "../router.js";
-import{ filterSection }from '../components/filters.js';// esto es la parte de los filtros  de html en dataverse
+//import{ filterSection }from '../components/filters.js';// esto es la parte de los filtros  de html en dataverse
 
 
 function Home(props) {
@@ -25,7 +25,7 @@ function Home(props) {
   <button type="button" id="indiChatLink">Chat</button>`; //este te lleva a la vista de error x ahora
 
   viewEl.appendChild(headerEl);
-  viewEl.appendChild(filterSection(filterData))
+  // viewEl.appendChild(filterSection(filterData))
   viewEl.appendChild(renderItems(data)) 
   
 

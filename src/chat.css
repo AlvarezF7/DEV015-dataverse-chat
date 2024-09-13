@@ -27,7 +27,7 @@
     flex-direction: row;
     position :relative; /*siosi*/
     z-index: 1;
-    background:linear-gradient(145deg,#4446ccc0,#1c148bc0,#110457c0);
+    background:linear-gradient(145deg,#3c3ea5c0,#1c148bc0,#110457c0);
    
     }
   .imgChat{
@@ -58,18 +58,27 @@
   .messages{
     height:70%;  
     width:70%;
-    border: 1px solid #291f85;
-   
+    margin: auto;
     padding:2% ;
-    background:linear-gradient(145deg,#6f71fcc0,#453ccec0,#2d1a99c0);   
+    background:linear-gradient(145deg,#6f71fcc0,#453ccec0,#2d1a99c0);  
+    justify-content: center; 
     }
     .chatResponse{
       width:30%;
       padding: 1%;
       margin-left:60%;
-      border-radius: 10px  0px 10px  10px;
-      background-color: #7a7cf8c0; /* Color de superposición */
+      font-size: larger;
+      border-radius: 10px  10px 0px  10px;
+      background-color: #7678e0d0; /* Color de superposición */
     
+    }  
+    .userChat{
+      width:30%;
+      padding: 1%;
+      margin-left:8%;
+      font-size: large;
+      border-radius: 0px  10px 10px  10px;
+      background-color: #20206d9f; /* Color de superposición */
     }  
     
   #userM{ 

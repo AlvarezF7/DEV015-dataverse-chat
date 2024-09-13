@@ -9,10 +9,6 @@ export function ErrorView() {
     `;
 
   //evento de escucha del clic
-
-  /* viewEl.querySelector('.returnLink').addEventListener( 'click', () => { 
-    navigateTo('/');
-  });*/
   const ErrorLinkEl = viewEl.querySelector('.returnHome');
   ErrorLinkEl.addEventListener('click', () => navigateTo("/" ));
 

@@ -61,6 +61,7 @@ export function ChatIndividual(props) {  //props solo contiene la id
     if (userText.trim() !== '') {
       // Crear un nuevo párrafo para mostrar el mensaje
       const newMessage = document.createElement('p');
+      newMessage.classList.add("userChat")
       newMessage.textContent = ` ${userText}`;
       messagesDiv.appendChild(newMessage); // Añadir el nuevo mensaje al contenedor de mensajes
       

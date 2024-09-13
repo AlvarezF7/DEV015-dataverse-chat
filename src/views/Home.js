@@ -11,8 +11,7 @@ import { navigateTo } from "../router.js";
 
 function Home(props) {
   const viewEl = document.createElement('div');
-  // const root =  document.getElementById("root");
-  //root.classList.add("vacio");
+ 
  
   const headerEl = document.createElement('header'); 
   headerEl.innerHTML= `

@@ -10,14 +10,15 @@ global.fetch = jest.fn(() =>
       choices: [
         {
           message: {
+            role:'system',
             content: 'Hola, soy el cantante. ¿Cómo puedo ayudarte?',
-            role: 'system',
           }
         }
       ],
     }),
   })
 );
+
 
 describe('communicateWithOpenAI', () => {
   it('should return mocked data from OpenAI API', async () => {
@@ -32,10 +33,12 @@ describe('communicateWithOpenAI', () => {
     // Verifica que la respuesta es la esperada
     expect(response).toEqual(
       {choices: [
-        {message: {
-          role:"system",
-          content: 'Hola, soy el cantante. ¿Cómo puedo ayudarte?',
-        }
+        {
+          message: 
+          {
+            role:'system',
+            content: 'Hola, soy el cantante. ¿Cómo puedo ayudarte?',
+          }
         }
       ]
       });
